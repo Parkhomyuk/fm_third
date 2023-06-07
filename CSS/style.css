@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+body .wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(212, 45%, 89%);
+}
+body .wrapper .substrate {
+  width: 90%;
+  height: 80%;
+  margin: 0 5% 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+body .wrapper .substrate .content {
+  width: 90%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60% 12% 10%;
+  grid-row-gap: 3%;
+  padding: 18px 18px 0px 18px;
+}
+body .wrapper .substrate .content .content_qr_code {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url(../images/image-qr-code.png);
+  background-size: cover;
+  background-position: center;
+}
+body .wrapper .substrate .content .content_title {
+  width: 90%;
+  font-size: 22.4px;
+  font-weight: 700;
+  text-align: center;
+}
+body .wrapper .substrate .content .content_description {
+  width: 85%;
+  margin-left: 5%;
+  font-size: 16.8px;
+  text-align: center;
+  color: hsl(220, 15%, 55%);
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  body .wrapper .substrate {
+    width: 70%;
+    height: 80%;
+    margin: 0 5% 0 5%;
+  }
+  body .wrapper .substrate .content .content_title {
+    font-size: 36.4px;
+    margin-left: 5%;
+  }
+  body .wrapper .substrate .content .content_description {
+    font-size: 26.6px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  body .wrapper .substrate {
+    width: 40%;
+    height: 100%;
+    margin: 0 5% 0 5%;
+  }
+  body .wrapper .substrate .content .content_title {
+    font-size: 25.2px;
+    margin-left: 5%;
+  }
+  body .wrapper .substrate .content .content_description {
+    font-size: 16.8px;
+  }
+}
+@media (min-width: 1025px) {
+  body .wrapper .substrate {
+    width: 25%;
+    height: 80%;
+  }
+  body .wrapper .substrate .content .content_title {
+    font-size: 30.8px;
+    margin-left: 5%;
+  }
+  body .wrapper .substrate .content .content_description {
+    font-size: 22.4px;
+  }
+}/*# sourceMappingURL=style.css.map */

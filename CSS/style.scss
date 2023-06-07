@@ -1,0 +1,126 @@
+@use 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    .wrapper{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: variables.$light-gray;
+    .substrate{   
+        width: 90%; 
+        height: 80%;       
+        margin: 0 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+       
+        background-color: variables.$white;
+        border-radius: 20px;
+        .content{
+            width: 90%;
+            height: 100%; 
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 60% 12% 10%;
+            grid-row-gap:3%;
+            padding: 18px 18px 0px 18px;
+            .content_qr_code{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                overflow: hidden;
+                border-radius: 10px;
+                background-image: url(../images/image-qr-code.png);
+                background-size: cover;
+                background-position: center;
+                
+            }
+            .content_title{
+                width: 90%;
+                font-size: variables.$font_size*1.6;
+                font-weight: 700;
+                text-align: center;
+                // background-color: aqua;
+            }
+            .content_description{
+                width: 85%;
+                margin-left: 5%;
+                font-size: variables.$font_size*1.20;                 
+                text-align: center;
+                color: variables.$grayis-blue;
+                // background-color: rgba(255, 0, 140, 0.149);
+            }
+        }
+    }
+} 
+@media (min-width: 769px) and (max-width:991px){
+    .wrapper{
+    .substrate{   
+        width: 70%; 
+        height: 80%;       
+        margin: 0 5% 0 5%;       
+        .content{
+            .content_title{
+                font-size: variables.$font_size*2.6;
+                margin-left: 5%;
+            }
+            .content_description{
+                font-size: variables.$font_size*1.9;
+            }
+        }
+    }
+}
+}
+@media (min-width: 992px) and (max-width:1024px){
+    .wrapper{
+    .substrate{   
+        width: 40%; 
+        height: 100%;       
+        margin: 0 5% 0 5%;     
+         
+        .content{
+            .content_title{
+                font-size: variables.$font_size*1.8;
+                margin-left: 5%;
+            }
+            .content_description{
+                font-size: variables.$font_size*1.2;
+            }
+        }
+    }
+}
+}
+@media (min-width:1025px) {
+    .wrapper{
+    .substrate{   
+        width: 25%; 
+        height: 80%;       
+        
+        .content{
+            .content_title{
+                font-size: variables.$font_size*2.2;
+                margin-left: 5%;
+            }
+            .content_description{
+                font-size: variables.$font_size*1.6;
+            }
+        }
+    }
+}
+}
+}
+
+
+ 
